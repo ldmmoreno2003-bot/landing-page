@@ -1,0 +1,63 @@
+.card {
+  position: relative; /* Fundamental: los hijos se alinean respecto a esto */
+  width: 600px;
+  height: 400px;
+  background: #AB2706; /* Fondo rojizo */
+  overflow: hidden; /* Corta lo que se salga del cuadro */
+  border-radius: 8px;
+}
+
+.circle {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 280px;
+  height: 280px;
+  background-color: #E5B94B; /* Color crema/amarillo */
+  border-radius: 50%; /* Lo hace círculo */
+  z-index: 1; /* Capa 1 (atrás) */
+}
+.pattern{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+}
+.pattern2{
+    position: absolute;
+    top: 280px;
+    left: 230px;
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+}
+.model-img {
+  position: absolute;
+  bottom: 0; /* Pegado abajo */
+  left: 60px;
+  height: 80%; /* Ajusta el tamaño */
+  z-index: 2; /* Capa 2 (encima del círculo) */
+  /* Si usas una imagen con fondo, usa 'mix-blend-mode: multiply' o PNG transparente */
+}
+
+.contenido {
+  position: absolute;
+  font-family: Work Sans, sans-serif;
+  right: 10px;
+  top: 40px;
+  width: 230px;
+  color: white;
+  z-index: 3; /* Capa 3 (al frente de todo) */
+}
+.boton{
+    background-color: #E5B94B; /* Color crema/amarillo */
+    color: black;
+    margin-top: 60px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
