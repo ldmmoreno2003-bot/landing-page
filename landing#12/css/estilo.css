@@ -1,0 +1,140 @@
+/* Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    padding: 5% 10%;
+}
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    border: #222;
+}
+
+/* Sección Hero */
+.seccion-hero {
+    max-width: 450px;
+}
+
+.titulo-principal {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.boton-explorar {
+    background-color: #222;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-explorar:hover {
+    background-color: #444;
+}
+
+/* Galería de Imágenes - Layout Asimétrico */
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Posicionamiento de las imágenes para el efecto visual */
+.tarjeta-1 {
+    grid-column: 1;
+    margin-top: 250px; /* Desplazada hacia abajo */
+}
+
+.tarjeta-2 {
+    grid-column: 2;
+    margin-top: 50px;
+    margin-right: px;
+}
+
+.tarjeta-3 {
+    grid-column: 2;
+    margin-top: 200px; 
+    margin-left: 20px;
+}
+
+
+.seccion-autor {
+    grid-column: 2;
+    margin-top: 40px;
+}
+
+.perfil-autor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.texto-autor {
+    font-size: 0.9rem;
+    color: #555;
+    max-width: 400px;
+}
+
+/* Responsivo para móviles y tablets */
+@media (max-width: 900px) {
+    .contenedor-principal {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    .seccion-hero {
+        text-align: center;
+        margin: 0 auto 50px;
+    }
+
+    .galeria-imagenes {
+        grid-template-columns: 1fr; 
+    }
+
+    .tarjeta-1, .tarjeta-2, .tarjeta-3 {
+        margin-top: 0;
+    }
+
+    .seccion-autor {
+        grid-column: 1;
+    }
+}
