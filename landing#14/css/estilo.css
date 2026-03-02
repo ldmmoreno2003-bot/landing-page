@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+    padding: 50px;
+}
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: 550px 500px; /* Layout de dos columnas principales */
+    gap: 10px;
+    max-width: 1100px;
+    align-items: center;
+}
+
+/* --- SECCIÓN DE TEXTO --- */
+.titulo-hero {
+    font-size: 64px;
+    color: #2b1d19; /* Tono marrón oscuro del diseño */
+    font-weight: 800;
+    top: 50px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.texto-descripcion {
+    font-size: 18px;
+    color: #555555;
+    line-height: 28px;
+    margin-bottom: 40px;
+    max-width: 480px;
+}
+
+.boton-descarga {
+    background-color: #fde08a; /* Amarillo suave */
+    color: #2b1d19;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+/* Tarjeta de Estadísticas */
+.contenedor-estadisticas {
+    background-color: #433430; /* Marrón oscuro */
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.dato {
+    text-align: left;
+    color: #ffffff;
+}
+
+.numero {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+
+.linea-separadora {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 10px 0px;
+}
+
+.subtexto {
+    font-size: 12px;
+    color: #cccccc;
+    max-width: 100px;
+}
+
+.seccion-visual {
+    position: relative;
+    height: 600px;
+}
+
+.imagen-fondo {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    top: 00px;
+    left: 30px;
+    border: solid;
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 1000px) {
+    .contenedor-principal {
+        grid-template-columns: 100%;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .texto-descripcion, .contenedor-estadisticas {
+        margin: 0 auto 40px auto;
+    }
+
+    .seccion-visual {
+        height: 700px;
+        display: flex;
+        justify-content: center;
+    }
+}
