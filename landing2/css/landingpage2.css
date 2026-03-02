@@ -1,4 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
 .titulo2{
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    
+}
+.descripcion2{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px ;
+    margin-left: 40px;
+   
+    margin-right: 100px;
+}
+.contenedor-boton2{
+    display: flex;
+    
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+.boton2{
+    background-color: black;
+    color: white;
+    padding: 20px 5px ;
+    text-align: center;
+    width: 160px;
+    font-size: 20px;
+    margin-left: 40px;
+    border-radius: 20px;
+    
+}
+.contenedorimagenesarriba{
+    padding: 5px;
+    width: 1000px;
+    margin-left: 500px;
+    margin-top: -400px;
+    gap: 10px 30px;
+
+}
+.imagenabajo{
+    transform: translateY(150px);
+}
+
+.contenedorimagenabajo{
+
+    display: flex ;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 1000px;
+
 }

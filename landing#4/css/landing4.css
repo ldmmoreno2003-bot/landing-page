@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+}
+.contenedorprincipal4{
+    display: flex;
+    gap: 20px; 
+    max-width: 1000px;
+    min-width: 100%;
+
+}
+.contenedorimagen4{
+    display: flex;
+    margin-top: 50px;
+}
+.contenedor2{
+    width: 35%;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.title4{
+    display: flex;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+   
+}
+.parrafo4{
+     display: flex;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    margin-top: 50px;
+    color: gray;
+}
+.contboton{
+    display: flex;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 40px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 80px;
+    width: 40%;
+
+}
+.contenedor0102{
+    display: flex;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 220px;
+}
+.h01{
+
+    display: flex;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    margin-top: 130px;
+    justify-content: center;
+    flex-direction: column;
+}
