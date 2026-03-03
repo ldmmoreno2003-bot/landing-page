@@ -1,4 +1,6 @@
-LINK GRUPO: 
+LINK GRUPO: https://github.com/ldmmoreno2003-bot/entrega-proyecto-grupo.git
+
+
 Landing Pages Collection
 Este repositorio contiene una colección de diversas páginas de aterrizaje (landing pages) desarrolladas de forma modular. Cada proyecto está organizado en su propia carpeta con su estructura independiente de estilos, imágenes y maquetación.
 
